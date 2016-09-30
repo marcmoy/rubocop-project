@@ -659,3 +659,15 @@ Style/TrailingUnderscoreVariable:
 
 Style/CollectionMethods:
   Enabled: false
+
+Style/EmptyLinesAroundModuleBody:
+  Enabled: false
+
+Style/TrailingWhitespace:
+  Enabled: false
+
+Style/LeadingCommentSpace:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false

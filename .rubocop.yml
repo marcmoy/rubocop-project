@@ -638,7 +638,7 @@ Rails/Validation:
 
 #### BEGIN RUBOCOP EDITS BY MARC ####
 #-----------------------------------#
-
+#
 Style/RedundantSelf:
   Enabled: false
 

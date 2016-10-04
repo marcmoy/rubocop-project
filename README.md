@@ -25,7 +25,7 @@
 - [x] PolyTreeNode
 - [x] KnightTravails
 
-<div style='width: 50%; display: block; float: left'>
+<div style='width: 40%; display: block; float: left'>
 ```ruby
   def code
     self.time = 0
@@ -33,7 +33,7 @@
 ```
 </div>
 
-<div style='width: 50%; display: block; float: left'>
+<div style='width: 40%; display: block; float: left'>
 ```ruby
   def code
     time = 0

@@ -128,17 +128,46 @@ end
 #### Style/EmptyLinesAroundModuleBody:
 ```ruby
 # Enabled: false
+module MazeClasses
+  # extra space OKAY
+  class Maze
+    # code #
+  end
+
+  class MazeSolver
+    # code #
+  end
+  # extra space OKAY
+end
 
 # Enabled: true
+module MazeClasses
+  class Maze # extra space NOT okay
+    # code #
+  end
 
+  class MazeSolver
+    # code #
+  end # extra space NOT okay
+end
 ```
 
 #### Style/TrailingWhitespace:
+*For this explanation, assume floating dot ( `·` ) is an empty space.*
 ```ruby
 # Enabled: false
-
+  def load_map(filename)
+  end
+·· # <-- trailing space OKAY
+  def is_wall?(point)
+  end
 # Enabled: true
-
+  def load_map(filename)
+    ...
+  end
+# <-- trailing space NOT okay
+  def is_wall?(point)
+  end
 ```
 
 #### Style/LeadingCommentSpace:

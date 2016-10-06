@@ -2,7 +2,7 @@ module MazeClasses
 
   class Maze
     DELTAS = [[1, 0], [0, 1], [-1, 0], [0, -1]]
-  
+
     attr_reader :start_ind, :end_ind
     def initialize(filename)
       @map = load_map(filename)
@@ -174,7 +174,7 @@ module MazeClasses
       path = [goal]
       spot = goal
       until @branching_paths[spot] == nil
-        path << @branching_paths[spot] 
+        path << @branching_paths[spot]
         spot = @branching_paths[spot]
       end
       path

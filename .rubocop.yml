@@ -662,9 +662,9 @@ Style/CollectionMethods:
 
 Style/EmptyLinesAroundModuleBody:
   Enabled: false
-
-Style/TrailingWhitespace:
-  Enabled: false
+# 
+# Style/TrailingWhitespace:
+#   Enabled: false
 
 Style/LeadingCommentSpace:
   Enabled: false

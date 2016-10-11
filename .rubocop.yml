@@ -2,7 +2,7 @@
 #-----------------------------------------#
 AllCops:
   Exclude:
-    - db/schema.rb
+    - '**db/schema.rb'
 
 Style/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
@@ -144,6 +144,8 @@ Style/EvenOdd:
 Style/ExtraSpacing:
   Description: 'Do not use unnecessary spacing.'
   Enabled: true
+  Exclude:
+    - '**/schema.rb'
 
 Style/FileName:
   Description: 'Use snake_case for source file names.'
@@ -720,11 +722,68 @@ Style/EmptyLinesAroundMethodBody:
 Peformance/RangeInclude:
   Enabled: false
 
-Style/TrailingCommaInArguements:
+Style/TrailingCommaInArguments:
   Enabled: false
 
 # Style/MultilineIfThen:
 #   Enabled: false
 
+Style/MultilineOperationIndentation:
+  Enabled: false
+
 Style/ConditionalAssignment:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Lint/RescueException:
+  Enabled: false
+
+Style/SpaceInsideParens:
+  Enabled: false
+
+Style/IndentArray:
+  Enabled: false
+
+Style/RedundantBegin:
+  Enabled: false
+
+Style/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Style/VariableNumber:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Style/IndentHash:
+  Enabled: false
+
+Style/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - '**/db/seeds.rb'
+    - '**/db/schema.rb'
+
+Style/ZeroLengthPredicate:
+  Enabled: false
+
+Syle/SpaceInsideBlockBraces:
+  Enabled: true
+
+Style/Tab:
+  Enabled: false
+
+Style/MultilineMethodCallIndentation:
+  Enabled: false
+
+Style/NestedParenthesizedCalls:
+  Enabled: false
+
+Style/MultilineMethodCallBraceLayout:
   Enabled: false

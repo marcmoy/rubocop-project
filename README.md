@@ -13,6 +13,7 @@ Run `rbenv which rubocop` to get your *executable path*.
 
 ###Step 4
 Open your Atom config file (`~/.atom/config.cson`) through the Atom navigation bar:
+<br>
 *Atom* -> *Config...*
 
 ###Step 5

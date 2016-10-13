@@ -115,7 +115,7 @@ end
 ```
 
 #### Style/CollectionMethods:
-```yml
+```.yml
   Style/CollectionMethods:
     Enabled: true
     PreferredMethods:

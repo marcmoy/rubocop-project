@@ -4,11 +4,15 @@
 
 ###Step 1
 Install the rubocop gem from the terminal:
-`gem install rubocop`
+```
+gem install rubocop
+```
 
 ###Step 2
 Install the linter-rubocop atom plug-in:
-`apm install linter-rubocop`
+```
+apm install linter-rubocop
+```
 
 ###Step 3
 Run `rbenv which rubocop` to get your *executable path*.

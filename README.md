@@ -1,28 +1,26 @@
-# Ruby Linter
+#App Academy Ruby Linter
 
-[rubcop spreadsheet](https://docs.google.com/a/appacademy.io/spreadsheets/d/1LSf0TQyAI98yZIFqe_u40V7q_j7pcFjUDE7EcVBdQ98/edit?usp=sharing)
+###How to install
 
-Refer to [summary](SUMMARY.md) for examples of rubocop settings.
+#####Step 1
+`gem install rubocop`
 
-## w1
+#####Step 2
+`apm install linter-rubocop`
 
-#### w1d1
-- [x] Enumerable
-- [x] Ghost
-- [x] Maze
+#####Step 3
+Run `rbenv which rubocop` to get your *executable path*.
 
-#### w1d2
-- [x] Memory
-- [x] Sudoku
+#####Step 4
+Open your Atom config file (`~/.atom/config.cson`) through the Atom navigation bar:
+*Atom* -> *Config...*
 
-#### w1d3
-- [x] Recursion
-- [x] Word Chains
+#####Step 5
+Add the following setting to your config file:
+```
+'linter-rubocop':
+  'executablePath': "YOUR_EXECUTABLE_PATH_FROM STEP_3"
+```
 
-#### w1d4
-- [ ] Screwdoku (skipped)
-- [x] MinesweeperA
-
-#### w1d4
-- [x] PolyTreeNode
-- [x] KnightTravails
+#####Step 6
+[Download](.rubocop.yml) the `.rubocop.yml` file and add to your root directory ( i.e. `/Users/Marc` )

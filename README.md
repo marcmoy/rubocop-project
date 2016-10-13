@@ -3,9 +3,11 @@
 ##How to install
 
 ###Step 1
+Install the rubocop gem from the terminal:
 `gem install rubocop`
 
 ###Step 2
+Install the linter-rubocop atom plug-in:
 `apm install linter-rubocop`
 
 ###Step 3

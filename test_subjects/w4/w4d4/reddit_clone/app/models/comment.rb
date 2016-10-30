@@ -1,6 +1,6 @@
 class Comment < ActiveRecord::Base
   include Votable
-  
+
   validates :body, :author, :post, presence: true
 
   belongs_to :post, inverse_of: :comments

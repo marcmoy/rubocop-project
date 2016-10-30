@@ -2,7 +2,7 @@ require_relative "card"
 
 class Board
   attr_reader :size
-
+  
   def initialize(size = 4)
     @rows = Array.new(size) { Array.new(size) }
     @size = size

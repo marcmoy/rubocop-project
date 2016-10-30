@@ -678,30 +678,30 @@ Style/MutableConstant:
   Enabled: false
 
 Style/SpaceAroundOperators:
-  Enabled: false
+  Enabled: true
 
 Style/StringLiteralsInInterpolation:
   Enabled: false
 
-Style/SymbolProc:
-  Enabled: false
+# Style/SymbolProc:
+#   Enabled: false
 
 Style/EmptyLinesAroundAccessModifier:
-  Enabled: false
-
-Style/StringLiterals:
   Enabled: false
 
 Style/SpaceAfterComma:
   Enabled: false
 
-Style/EmptyLines:
-  Enabled: false
+# Style/EmptyLines:
+#   Enabled: false
 
 Style/ParallelAssignment:
   Enabled: false
 
 Style/BlockComments:
+  Enabled: false
+
+Style/StringLiterals:
   Enabled: false
 
 Style/PreferredHashMethods:
@@ -713,8 +713,8 @@ Style/SpaceInsideBrackets:
 Style/TrailingCommaInLiteral:
   Enabled: false
 
-Style/HashSyntax:
-  Enabled: false
+# Style/HashSyntax:
+#   Enabled: false
 
 Style/DotPosition:
   Enabled: false
@@ -722,23 +722,23 @@ Style/DotPosition:
 Style/EmptyLinesAroundMethodBody:
   Enabled: false
 
-Peformance/RangeInclude:
-  Enabled: false
-
-Style/TrailingCommaInArguments:
-  Enabled: false
-
-# Style/MultilineIfThen:
+# Peformance/RangeInclude:
 #   Enabled: false
 
-Style/MultilineOperationIndentation:
+# Style/TrailingCommaInArguments:
+#   Enabled: false
+
+Style/MultilineIfThen:
   Enabled: false
 
-Style/ConditionalAssignment:
-  Enabled: false
+# Style/MultilineOperationIndentation:
+#   Enabled: false
 
-Metrics/PerceivedComplexity:
-  Enabled: false
+# Style/ConditionalAssignment:
+#   Enabled: false
+
+# Metrics/PerceivedComplexity:
+#   Enabled: false
 
 Lint/RescueException:
   Enabled: false
@@ -768,7 +768,7 @@ Style/SpaceInsideHashLiteralBraces:
   Enabled: false
 
 Metrics/LineLength:
-  Max: 100
+  Max: 80
   Exclude:
     - '**/db/seeds.rb'
     - '**/db/schema.rb'
@@ -777,7 +777,7 @@ Style/ZeroLengthPredicate:
   Enabled: false
 
 Syle/SpaceInsideBlockBraces:
-  Enabled: true
+  Enabled: false
 
 Style/Tab:
   Enabled: false
@@ -794,5 +794,8 @@ Style/MultilineMethodCallBraceLayout:
 Style/ClassAndModuleChildren:
   Enabled: false
 
-Style/AlignHash:
-  Enabled: false
+# Style/AlignHash:
+#   Enabled: false
+#
+# Style/AlignParameters:
+#   Enabled: false

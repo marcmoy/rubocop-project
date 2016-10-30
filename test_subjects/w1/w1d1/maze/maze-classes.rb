@@ -19,7 +19,7 @@ module MazeClasses
       end
       maze
     end
-    
+
     def is_wall?(point)
       x, y = point
       @map[y][x] == "*"

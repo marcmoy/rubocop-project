@@ -156,7 +156,7 @@ Here are the results:
 ```
 
 ### ThoughtBot Rubocop
-Next, the current code base was tested using the `.rubocop.yml` file from the [ThoughBot Style Guide](https://github.com/thoughtbot/guides). The raw file that was downloaded for this study can be found [here](somewhere).
+Next, the current code base was tested using the `.rubocop.yml` file from the [ThoughBot Style Guide](https://github.com/thoughtbot/guides). The raw file that was downloaded for this study can be found [here](raw/.rubocop.yml).
 
 ```
 5078   Metrics/LineLength

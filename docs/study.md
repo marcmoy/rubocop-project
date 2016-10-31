@@ -263,15 +263,164 @@ Next, the current code base was tested using the `.rubocop.yml` file from the [T
 16477  Total
 ```
 
+### App Academy Rubocop (Pre-Autocorrect)
+After adding some modifications to the existing ThoughBot Rubocop settings, here are the current offenses caught in the existing curriculum code base before using the autocorrector tool:
+
+```
+3653  Style/StringLiterals
+2407  Style/SpaceAroundOperators
+915   Style/SpaceInsideHashLiteralBraces
+614   Style/Tab
+428   Style/HashSyntax
+317   Metrics/LineLength
+154   Style/SpaceInsideBlockBraces
+112   Style/IndentationWidth
+104   Style/BracesAroundHashParameters
+81    Style/ExtraSpacing
+79    Lint/UselessAssignment
+67    Style/EmptyLinesAroundAccessModifier
+47    Style/SpaceBeforeBlockBraces
+33    Style/SymbolProc
+32    Style/SpaceInsideParens
+30    Style/MutableConstant
+29    Style/IndentationConsistency
+27    Style/SpaceAfterComma
+20    Style/BlockDelimiters
+15    Lint/UnusedMethodArgument
+13    Style/AlignParameters
+12    Lint/UnusedBlockArgument
+11    Style/BlockEndNewline
+11    Style/CommentIndentation
+11    Style/MultilineBlockLayout
+11    Style/TernaryParentheses
+10    Lint/ShadowingOuterLocalVariable
+9     Style/ClosingParenthesisIndentation
+8     Style/MultilineMethodCallIndentation
+7     Lint/IneffectiveAccessModifier
+7     Style/VariableNumber
+6     Lint/UselessAccessModifier
+6     Style/AlignHash
+6     Style/Semicolon
+6     Style/StringLiteralsInInterpolation
+5     Lint/BlockAlignment
+5     Performance/RedundantBlockCall
+5     Style/ConditionalAssignment
+5     Style/IdenticalConditionalBranches
+5     Style/RedundantParentheses
+5     Style/SpaceAfterColon
+4     Performance/RangeInclude
+4     Style/IndentHash
+4     Style/MethodCallParentheses
+4     Style/MultilineOperationIndentation
+4     Style/NestedParenthesizedCalls
+4     Style/ParenthesesAroundCondition
+4     Style/RescueModifier
+3     Lint/RescueException
+3     Lint/UnifiedInteger
+3     Metrics/PerceivedComplexity
+3     Style/AccessModifierIndentation
+3     Style/InfiniteLoop
+3     Style/MethodDefParentheses
+3     Style/SpaceInsideStringInterpolation
+3     Style/TrailingUnderscoreVariable
+3     Style/UnneededInterpolation
+2     Lint/UselessComparison
+2     Style/EmptyLineBetweenDefs
+2     Style/MethodMissing
+2     Style/MultilineArrayBraceLayout
+2     Style/MultilineIfThen
+2     Style/RedundantReturn
+2     Style/SpaceAfterMethodName
+2     Style/SpaceAroundKeyword
+2     Style/SpaceInsideRangeLiteral
+2     Style/ZeroLengthPredicate
+1     Lint/DuplicateMethods
+1     Lint/EndAlignment
+1     Performance/FixedSize
+1     Style/AndOr
+1     Style/BarePercentLiterals
+1     Style/ClassAndModuleCamelCase
+1     Style/ElseAlignment
+1     Style/MethodName
+1     Style/PreferredHashMethods
+1     Style/RedundantBegin
+1     Style/UnlessElse
+--
+9414  Total
+```
+
+### App Academy Rubocop (Post-Autocorrect)
+Here are the offenses caught in the existing curriculum code base after using the autocorrector tool:
+
+```
+376  Metrics/LineLength
+79   Lint/UselessAssignment
+20   Style/BlockDelimiters
+15   Lint/UnusedMethodArgument
+12   Lint/UnusedBlockArgument
+11   Style/BlockEndNewline
+11   Style/MultilineBlockLayout
+10   Lint/ShadowingOuterLocalVariable
+8    Style/MultilineMethodCallIndentation
+7    Lint/BlockAlignment
+7    Lint/IneffectiveAccessModifier
+7    Style/CommentIndentation
+7    Style/VariableNumber
+6    Lint/UselessAccessModifier
+6    Style/ClosingParenthesisIndentation
+6    Style/Semicolon
+6    Style/StringLiteralsInInterpolation
+5    Performance/RedundantBlockCall
+5    Style/ConditionalAssignment
+5    Style/IdenticalConditionalBranches
+5    Style/SpaceAfterColon
+4    Performance/RangeInclude
+4    Style/MethodCallParentheses
+4    Style/MultilineOperationIndentation
+4    Style/NestedParenthesizedCalls
+4    Style/ParenthesesAroundCondition
+4    Style/RedundantParentheses
+4    Style/RescueModifier
+3    Lint/RescueException
+3    Lint/UnifiedInteger
+3    Metrics/PerceivedComplexity
+3    Style/InfiniteLoop
+3    Style/MethodDefParentheses
+3    Style/SpaceInsideStringInterpolation
+3    Style/TrailingUnderscoreVariable
+3    Style/UnneededInterpolation
+2    Lint/UselessComparison
+2    Style/EmptyLineBetweenDefs
+2    Style/MethodMissing
+2    Style/MultilineArrayBraceLayout
+2    Style/MultilineIfThen
+2    Style/RedundantReturn
+2    Style/SpaceAfterMethodName
+2    Style/SpaceAroundKeyword
+2    Style/SpaceInsideRangeLiteral
+2    Style/ZeroLengthPredicate
+1    Lint/DuplicateMethods
+1    Performance/FixedSize
+1    Style/AccessModifierIndentation
+1    Style/AndOr
+1    Style/BarePercentLiterals
+1    Style/ClassAndModuleCamelCase
+1    Style/MethodName
+1    Style/PreferredHashMethods
+1    Style/RedundantBegin
+1    Style/UnlessElse
+--
+696  Total
+```
+
 ## Summary
 
-| Directory Name | default | thoughtbot |
-|:--------------:|:-------:|:----------:|
-|      Ruby      |    2150 |       1199 |
-|       SQL      |   26980 |       8291 |
-|      Rails     |    3435 |       2921 |
-|    HTML/CSS    |     124 |         95 |
-|   Javascript   |     558 |        429 |
-|      React     |    6130 |       3542 |
-|        -       |    -    |      -     |
-| Total Offenses |   39377 |      16477 |
+| Directory Name | Default Settings | Thoughbot Settings | a/A Settings (pre-autocorrect) | a/A Settings (post-autocorrect) |
+|:--------------:|:----------------:|:------------------:|--------------------------------|---------------------------------|
+|      Ruby      |       2150       |        1199        |               762              |               150               |
+|       SQL      |       26980      |        8291        |              3689              |               266               |
+|      Rails     |       3435       |        2921        |              2051              |               184               |
+|    HTML/CSS    |        124       |         95         |               62               |                2                |
+|   Javascript   |        558       |         429        |               254              |                23               |
+|      React     |       6130       |        3542        |              2596              |                71               |
+| Total Offenses |       39377      |        16477       |              9414              |               696               |

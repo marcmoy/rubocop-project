@@ -1,11 +1,7 @@
-## Version 1.0
-## Wednesday, October 12, 2016
-
-#### BEGIN THOUGHTBOT RUBOCOP SETTINGS ####
-#-----------------------------------------#
 AllCops:
   Exclude:
-    - '**db/schema.rb'
+    # - db/schema.rb
+    - '**/db/schema.rb' # changed by Marc
 
 Style/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
@@ -105,10 +101,12 @@ Rails/Delegate:
   Description: 'Prefer delegate method for delegations.'
   Enabled: false
 
-Style/DeprecatedHashMethods:
-  Description: 'Checks for use of deprecated Hash methods.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#hash-key'
-  Enabled: false
+# Warning: unrecognized cop Style/DeprecatedHashMethods
+
+# Style/DeprecatedHashMethods:
+#   Description: 'Checks for use of deprecated Hash methods.'
+#   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#hash-key'
+#   Enabled: false
 
 Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
@@ -147,8 +145,6 @@ Style/EvenOdd:
 Style/ExtraSpacing:
   Description: 'Do not use unnecessary spacing.'
   Enabled: true
-  Exclude:
-    - '**/schema.rb'
 
 Style/FileName:
   Description: 'Use snake_case for source file names.'
@@ -638,164 +634,92 @@ Rails/Validation:
   Description: 'Use validates :attribute, hash of validations.'
   Enabled: false
 
-#---------------------------------------#
-#### END THOUGHTBOT RUBOCOP SETTINGS ####
+# Added by Marc
 
-#### BEGIN RUBOCOP EDITS BY MARC ####
-#-----------------------------------#
+Metrics/LineLength:
+  Exclude:
+    - '**/db/data/movies.rb'
+    - '**/config/*.rb'
+    - '**/config/environments/*.rb'
+    - '**/config/initializers/*.rb'
+    - '**/config/production/*.rb'
+    - '**/bin/spring'
+    - '**/Gemfile'
+    - '**/Rakefile'
 
-Style/RedundantSelf:
-  Enabled: false
-
-Performance/RedundantBlockCall:
-  Enabled: false
-
-Style/EmptyLinesAroundClassBody:
-  Enabled: false
-
-Style/NumericPredicate:
-  Enabled: false
-
-Style/PredicateName:
-  Enabled: false
-
-Style/TrailingUnderscoreVariable:
-  Enabled: false
-
-Style/CollectionMethods:
-  Enabled: false
-
-Style/EmptyLinesAroundModuleBody:
-  Enabled: false
-
-Style/TrailingWhitespace:
-  Enabled: false
-
-Style/LeadingCommentSpace:
-  Enabled: false
-
-Style/MutableConstant:
-  Enabled: false
-
-Style/SpaceAroundOperators:
-  Enabled: true
-
-Style/StringLiteralsInInterpolation:
-  Enabled: false
-
-# Style/SymbolProc:
-#   Enabled: false
-
-Style/EmptyLinesAroundAccessModifier:
-  Enabled: false
-
-Style/SpaceAfterComma:
-  Enabled: false
-
-# Style/EmptyLines:
-#   Enabled: false
-
-Style/ParallelAssignment:
-  Enabled: false
-
-Style/BlockComments:
-  Enabled: false
-
-Style/StringLiterals:
-  Enabled: false
-
-Style/PreferredHashMethods:
-  Enabled: false
-
-Style/SpaceInsideBrackets:
+Style/Documentation:
   Enabled: false
 
 Style/TrailingCommaInLiteral:
   Enabled: false
 
-# Style/HashSyntax:
-#   Enabled: false
-
-Style/DotPosition:
+Style/TrailingCommaInArguments:
   Enabled: false
 
-Style/EmptyLinesAroundMethodBody:
-  Enabled: false
-
-# Peformance/RangeInclude:
-#   Enabled: false
-
-# Style/TrailingCommaInArguments:
-#   Enabled: false
-
-Style/MultilineIfThen:
-  Enabled: false
-
-# Style/MultilineOperationIndentation:
-#   Enabled: false
-
-# Style/ConditionalAssignment:
-#   Enabled: false
-
-# Metrics/PerceivedComplexity:
-#   Enabled: false
-
-Lint/RescueException:
-  Enabled: false
-
-Style/SpaceInsideParens:
+Style/TrailingWhitespace:
   Enabled: false
 
 Style/IndentArray:
   Enabled: false
 
-Style/RedundantBegin:
+Style/RedundantSelf:
+  Enabled: false
+
+### Empty Lines ###
+# TODO: Figure out how to configure the number of empty lines detected.
+# Until then, leave these cops disabled.
+####################
+Style/EmptyLines:
+  Enabled: false
+
+Style/EmptyLinesAroundMethodBody:
+  Enabled: false
+
+Style/EmptyLinesAroundModuleBody:
   Enabled: false
 
 Style/EmptyLinesAroundBlockBody:
   Enabled: false
 
-Style/VariableNumber:
+Style/EmptyLinesAroundClassBody:
   Enabled: false
-
-Style/BracesAroundHashParameters:
-  Enabled: false
-
-Style/IndentHash:
-  Enabled: false
-
-Style/SpaceInsideHashLiteralBraces:
-  Enabled: false
-
-Metrics/LineLength:
-  Max: 80
-  Exclude:
-    - '**/db/seeds.rb'
-    - '**/db/schema.rb'
-
-Style/ZeroLengthPredicate:
-  Enabled: false
-
-Syle/SpaceInsideBlockBraces:
-  Enabled: false
-
-Style/Tab:
-  Enabled: false
-
-Style/MultilineMethodCallIndentation:
-  Enabled: false
-
-Style/NestedParenthesizedCalls:
-  Enabled: false
-
-Style/MultilineMethodCallBraceLayout:
-  Enabled: false
+####################
 
 Style/ClassAndModuleChildren:
   Enabled: false
 
-# Style/AlignHash:
-#   Enabled: false
-#
-# Style/AlignParameters:
-#   Enabled: false
+Style/DotPosition:
+  Enabled: false
+
+Style/TrailingBlankLines:
+  Enabled: false
+
+Style/MultilineMethodCallBraceLayout:
+  Enabled: false # TODO: Discuss/study the use of this cop more closely.
+
+Style/FirstParameterIndentation:
+  Enabled: false
+
+Style/LeadingCommentSpace:
+  Enabled: false
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Style/CollectionMethods:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/SpaceInsideBrackets:
+  Enabled: false
+
+Style/PredicateName:
+  Enabled: false
+
+# TODO: Give reasons why these cops below were turned off in rubocop_adjustments.md
+# NB: These cops below do not appear often in curriculum code base
+
+Style/BlockComments:
+  Enabled: false

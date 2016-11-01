@@ -263,8 +263,8 @@ Next, the current code base was tested using the `.rubocop.yml` file from the [T
 16477  Total
 ```
 
-### App Academy Rubocop (Pre-Autocorrect)
-After adding some modifications to the existing ThoughBot Rubocop settings, here are the current offenses caught in the existing curriculum code base before using the autocorrector tool:
+### App Academy Rubocop Adjustments
+[Adjustments](/rubocop_adjustments.md) were made to the Rubocop settings and tested again to existing curriculum code base. Here are the results:
 
 ```
 3653  Style/StringLiterals
@@ -349,68 +349,32 @@ After adding some modifications to the existing ThoughBot Rubocop settings, here
 9414  Total
 ```
 
-### App Academy Rubocop (Post-Autocorrect)
-Here are the offenses caught in the existing curriculum code base after using the autocorrector tool:
+### App Academy Rubocop with Autocorrect
+After using the Autocorrect tool, the existing code base was tested again. Here are the results:
 
 ```
-376  Metrics/LineLength
+373  Metrics/LineLength
 79   Lint/UselessAssignment
 20   Style/BlockDelimiters
 15   Lint/UnusedMethodArgument
-12   Lint/UnusedBlockArgument
-11   Style/BlockEndNewline
 11   Style/MultilineBlockLayout
 10   Lint/ShadowingOuterLocalVariable
-8    Style/MultilineMethodCallIndentation
-7    Lint/BlockAlignment
 7    Lint/IneffectiveAccessModifier
-7    Style/CommentIndentation
-7    Style/VariableNumber
 6    Lint/UselessAccessModifier
-6    Style/ClosingParenthesisIndentation
-6    Style/Semicolon
-6    Style/StringLiteralsInInterpolation
-5    Performance/RedundantBlockCall
-5    Style/ConditionalAssignment
 5    Style/IdenticalConditionalBranches
-5    Style/SpaceAfterColon
-4    Performance/RangeInclude
-4    Style/MethodCallParentheses
-4    Style/MultilineOperationIndentation
-4    Style/NestedParenthesizedCalls
-4    Style/ParenthesesAroundCondition
-4    Style/RedundantParentheses
-4    Style/RescueModifier
 3    Lint/RescueException
-3    Lint/UnifiedInteger
 3    Metrics/PerceivedComplexity
-3    Style/InfiniteLoop
-3    Style/MethodDefParentheses
-3    Style/SpaceInsideStringInterpolation
-3    Style/TrailingUnderscoreVariable
-3    Style/UnneededInterpolation
 2    Lint/UselessComparison
-2    Style/EmptyLineBetweenDefs
 2    Style/MethodMissing
-2    Style/MultilineArrayBraceLayout
-2    Style/MultilineIfThen
-2    Style/RedundantReturn
-2    Style/SpaceAfterMethodName
-2    Style/SpaceAroundKeyword
-2    Style/SpaceInsideRangeLiteral
-2    Style/ZeroLengthPredicate
+2    Style/Semicolon
 1    Lint/DuplicateMethods
 1    Performance/FixedSize
-1    Style/AccessModifierIndentation
-1    Style/AndOr
 1    Style/BarePercentLiterals
 1    Style/ClassAndModuleCamelCase
 1    Style/MethodName
-1    Style/PreferredHashMethods
-1    Style/RedundantBegin
 1    Style/UnlessElse
 --
-696  Total
+544  Total
 ```
 
 ## Summary

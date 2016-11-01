@@ -9,28 +9,85 @@ This tool can be combined with `--only` to work for a single cop if needed. For 
 $ rubocop --only Style/StringLiterals -a
 ```
 
-## Using Autocorrector
+## Cops Autocorrected
 The Rubocop Documentation advises to use this autocorrector tool ***with caution*** as it can be very destructive depending on the offense.
 
 Here the following Rubocop rules that were tested and determined to be safe to use with the autocorrector tool:
 
-- Style/StringLiterals
-- Style/SpaceAroundOperators
-- Style/SpaceInsideHashLiteralBraces
-- Style/Tab
-- Style/HashSyntax
-- Style/SpaceInsideBlockBraces
-- Style/IndentationWidth
-- Style/BracesAroundHashParameters
-- Style/ExtraSpacing
-- Style/EmptyLinesAroundAccessModifier
-- Style/SymbolProc
-- Style/SpaceInsideParens
-- Style/MutableConstant
-- Style/IndentationConsistency
-- Style/SpaceAfterComma
-- Style/AlignParameters
-- Style/SpaceBeforeBlockBraces
-- Style/SpaceAfterComma
-- Style/AlignHash
-- Style/TernaryParentheses
+##### Cops with more than 20 offenses
+- [x] Style/StringLiterals
+- [x] Style/SpaceAroundOperators
+- [x] Style/SpaceInsideHashLiteralBraces
+- [x] Style/Tab
+- [x] Style/HashSyntax
+- [x] Style/SpaceInsideBlockBraces
+- [x] Style/IndentationWidth
+- [x] Style/BracesAroundHashParameters
+- [x] Style/ExtraSpacing
+- [x] Style/EmptyLinesAroundAccessModifier
+- [x] Style/SymbolProc
+- [x] Style/SpaceInsideParens
+- [x] Style/MutableConstant
+- [x] Style/IndentationConsistency
+- [x] Style/SpaceAfterComma
+- [x] Style/AlignParameters
+- [x] Style/SpaceBeforeBlockBraces
+- [x] Style/SpaceAfterComma
+- [x] Style/AlignHash
+- [x] Style/TernaryParentheses
+
+##### Cops with less than 20 offenses
+- [x] Style/BlockEndNewline
+- [x] Lint/BlockAlignment
+- [x] Style/CommentIndentation
+- [x] Style/ClosingParenthesisIndentation
+- [x] Style/Semicolon (doesn't fix all offenses, two needs to be changed manually)
+- [x] Style/StringLiteralsInInterpolation
+- [x] Style/SpaceAfterColon
+- [x] Performance/RangeInclude
+- [x] Style/MethodCallParentheses
+- [x] Style/NestedParenthesizedCalls
+- [x] Style/ParenthesesAroundCondition
+- [x] Style/RedundantParentheses
+- [x] Lint/UnifiedInteger
+- [x] Style/InfiniteLoop
+- [x] Style/MethodDefParentheses
+- [x] Style/SpaceInsideStringInterpolation
+- [x] Style/UnneededInterpolation
+- [x] Style/EmptyLineBetweenDefs
+- [x] Style/MultilineArrayBraceLayout
+- [x] Style/MultilineIfThen
+- [x] Style/RedundantReturn
+- [x] Style/SpaceAfterMethodName
+- [x] Style/SpaceAroundKeyword
+- [x] Style/SpaceInsideRangeLiteral
+- [x] Style/ZeroLengthPredicate
+- [x] Style/AccessModifierIndentation
+- [x] Style/AndOr
+- [x] Style/PreferredHashMethods
+- [x] Style/RedundantBegin
+
+## Cops Not Autocorrected
+This a list of cops that were determined to be destructive that should not be autocorrected and would need to fixed manually:
+
+- [ ] Metrics/LineLength
+- [ ] Lint/UselessAssignment
+- [ ] Lint/UnusedMethodArgument
+- [ ] Lint/UnusedBlockArgument
+- [ ] Style/BlockDelimiters
+- [ ] Style/MultilineBlockLayout
+- [ ] Lint/ShadowingOuterLocalVariable
+- [ ] Metrics/PerceivedComplexity
+- [ ] Style/BarePercentLiterals
+- [ ] Style/ClassAndModuleCamelCase
+- [ ] Style/MethodName
+- [ ] Style/UnlessElse
+- [ ] Lint/DuplicateMethods
+- [ ] Performance/FixedSize
+- [ ] Style/MethodMissing
+- [ ] Lint/UselessAccessModifier
+- [ ] Lint/UselessComparison
+- [ ] Metrics/PerceivedComplexity
+- [ ] Lint/RescueException
+- [ ] Style/IdenticalConditionalBranches
+- [ ] Lint/IneffectiveAccessModifier

@@ -1,7 +1,7 @@
 AllCops:
   Exclude:
     # - db/schema.rb
-    - '**/db/schema.rb' # changed by Marc
+    - '**/db/schema.rb' # changed made for a/A
 
 Style/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
@@ -634,8 +634,11 @@ Rails/Validation:
   Description: 'Use validates :attribute, hash of validations.'
   Enabled: false
 
-# Added by Marc
+# NB: Settings below this line is configured for a/A
 
+# TODO: Figure out how to configure Metrics/LineLength to ignore comment lines
+# Once that's figured out, revisit if Metrics/LineLength still needs to ignore
+# Rails config/, bin/, Gemfile, and Rakefile
 Metrics/LineLength:
   Exclude:
     - '**/db/data/movies.rb'
@@ -694,8 +697,10 @@ Style/DotPosition:
 Style/TrailingBlankLines:
   Enabled: false
 
+# TODO: Discuss/study Style/MultilineMethodCallBraceLayout the  more closely.
+# Keep it disabled for now.
 Style/MultilineMethodCallBraceLayout:
-  Enabled: false # TODO: Discuss/study the use of this cop more closely.
+  Enabled: false
 
 Style/FirstParameterIndentation:
   Enabled: false
@@ -718,8 +723,25 @@ Style/SpaceInsideBrackets:
 Style/PredicateName:
   Enabled: false
 
-# TODO: Give reasons why these cops below were turned off in rubocop_adjustments.md
-# NB: These cops below do not appear often in curriculum code base
+# NB: These cops below this line do not appear often in curriculum code base
 
 Style/BlockComments:
+  Enabled: false
+
+Style/VariableNumber:
+  Enabled: false
+
+Performance/RedundantBlockCall:
+  Enabled: false
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/MultilineOperationIndentation:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: false
+
+Style/TrailingUnderscoreVariable:
   Enabled: false

@@ -349,7 +349,7 @@ Next, the current code base was tested using the `.rubocop.yml` file from the [T
 ```
 
 ### App Academy Rubocop with Autocorrect
-Rubocop comes with a command line tool to autocorrect multiple files (furthur explained [here](autocorrect.md)). This tool was ran against the existing code base with the a/A rubocop settings *to only observe the capabilities of that script*.
+Rubocop comes with a command line tool to autocorrect multiple files (furthur explained [here](autocorrect.md)). This tool was ran against the existing code base with the a/A rubocop settings **to only observe the capabilities of that script**.
 
 Here are the results:
 ```

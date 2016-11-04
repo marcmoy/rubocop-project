@@ -1,6 +1,12 @@
 # Objective
 Develop a Ruby linter to help guide students and teachers to write Ruby code with best coding practices in mind.
 
+### Helpful Links
+- [ThoughtBot Style Guide](https://github.com/thoughtbot/guides)
+- [ThoughtBot .rubocop.yml file](https://github.com/thoughtbot/guides/blob/master/style/ruby/.rubocop.yml)
+- [Rubocop](https://github.com/bbatsov/rubocop)
+- [Rubocop Basic Usage](https://github.com/bbatsov/rubocop/blob/master/manual/basic_usage.md)
+
 # Study
 The [`appacademy/curriculum`](https://github.com/appacademy/curriculum) repository was analyzed in this study. Rubocop offenses can be counted using the following `rubocop` command line tool:
 ```
@@ -264,7 +270,7 @@ Next, the current code base was tested using the `.rubocop.yml` file from the [T
 ```
 
 ### App Academy Rubocop Adjustments
-[Adjustments](/rubocop_adjustments.md) were made to the Rubocop settings and tested again to existing curriculum code base. Here are the results:
+[Adjustments](rubocop_adjustments.md) were made to the Rubocop settings and tested again to existing curriculum code base. Here are the results:
 
 ```
 2407  Style/SpaceAroundOperators
@@ -343,8 +349,9 @@ Next, the current code base was tested using the `.rubocop.yml` file from the [T
 ```
 
 ### App Academy Rubocop with Autocorrect
-Rubocop comes with a command line tool to autocorrect multiple files (furthur explained [here](autocorrect.md). This tool was ran against the existing code base with the a/A rubocop settings to observe the capabilities of that script. Here are the results:
+Rubocop comes with a command line tool to autocorrect multiple files (furthur explained [here](autocorrect.md)). This tool was ran against the existing code base with the a/A rubocop settings *to only observe the capabilities of that script*.
 
+Here are the results:
 ```
 373  Metrics/LineLength
 79   Lint/UselessAssignment

@@ -1,5 +1,7 @@
 # Autocorrector
 
+Click [here](https://github.com/bbatsov/rubocop/blob/master/manual/basic_usage.md) for Rubocop Basic Usage Manual.
+
 Rubocop comes with the following command line tool that can autocorrect offenses:
 ```
 $ rubocop -a

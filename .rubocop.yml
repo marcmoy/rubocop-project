@@ -634,7 +634,8 @@ Rails/Validation:
   Description: 'Use validates :attribute, hash of validations.'
   Enabled: false
 
-# NB: Settings below this line is configured for a/A
+# NB: Settings below this line is configured for a/A.
+# See docs/rubocop_adjustments.md for reasons for these adjustments
 
 # TODO: Figure out how to configure Metrics/LineLength to ignore comment lines
 # Once that's figured out, revisit if Metrics/LineLength still needs to ignore
@@ -650,6 +651,9 @@ Metrics/LineLength:
     - '**/Gemfile'
     - '**/Rakefile'
 
+Style/StringLiterals:
+  Enabled: false
+  
 Style/Documentation:
   Enabled: false
 

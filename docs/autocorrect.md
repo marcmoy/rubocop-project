@@ -12,10 +12,17 @@ $ rubocop --only Style/StringLiterals -a
 ## Cops Autocorrected
 The Rubocop Documentation advises to use this autocorrector tool ***with caution*** as it can be very destructive depending on the offense.
 
+*NOTE:* The use of this autocorrector needs to be carefully thought out before applying to the existing code base. Some variables needs to be worked out, such as:
+
+- Which cops are safe to use
+- What order should the autocorrect script run these cops
+- How to split up git commits for this huge change
+
+## Tested Autocorrect Cops
+
 Here the following Rubocop rules that were tested and determined to be safe to use with the autocorrector tool:
 
 ##### Cops with more than 20 offenses
-- [x] Style/StringLiterals
 - [x] Style/SpaceAroundOperators
 - [x] Style/SpaceInsideHashLiteralBraces
 - [x] Style/Tab
@@ -68,7 +75,7 @@ Here the following Rubocop rules that were tested and determined to be safe to u
 - [x] Style/RedundantBegin
 
 ## Cops Not Autocorrected
-This a list of cops that were determined to be destructive that should not be autocorrected and would need to fixed manually:
+This a list of cops that were determined to be destructive that should not be autocorrected and would need to be fixed manually:
 
 - [ ] Metrics/LineLength
 - [ ] Lint/UselessAssignment

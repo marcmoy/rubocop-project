@@ -2,7 +2,6 @@
 ```
 curriculum/ruby
 
-324  Style/StringLiterals
 78   Style/HashSyntax
 44   Metrics/LineLength
 30   Style/SpaceInsideHashLiteralBraces
@@ -19,14 +18,11 @@ curriculum/ruby
 8    Style/BracesAroundHashParameters
 6    Lint/UnusedBlockArgument
 6    Lint/UnusedMethodArgument
-5    Performance/RedundantBlockCall
 5    Style/IndentationConsistency
 5    Style/IndentationWidth
 5    Style/RedundantParentheses
 4    Lint/ShadowingOuterLocalVariable
 4    Performance/RangeInclude
-4    Style/MultilineOperationIndentation
-4    Style/RescueModifier
 4    Style/StringLiteralsInInterpolation
 3    Lint/IneffectiveAccessModifier
 3    Lint/UnifiedInteger
@@ -35,7 +31,6 @@ curriculum/ruby
 3    Style/IdenticalConditionalBranches
 3    Style/MethodCallParentheses
 3    Style/ParenthesesAroundCondition
-3    Style/TrailingUnderscoreVariable
 2    Lint/RescueException
 2    Lint/UselessAccessModifier
 2    Lint/UselessAssignment
@@ -48,37 +43,34 @@ curriculum/ruby
 2    Style/SpaceAfterMethodName
 2    Style/SpaceInsideRangeLiteral
 2    Style/UnneededInterpolation
-2    Style/VariableNumber
 1    Lint/BlockAlignment
 1    Lint/DuplicateMethods
 1    Style/AndOr
 1    Style/BarePercentLiterals
 1    Style/BlockEndNewline
 1    Style/ClassAndModuleCamelCase
-1    Style/ConditionalAssignment
 1    Style/MultilineBlockLayout
 1    Style/PreferredHashMethods
 1    Style/RedundantBegin
 1    Style/Semicolon
 1    Style/UnlessElse
 --
-762  Total
+419  Total
 ```
 
 #SQL
 ```
 curriculum/sql
 
-1012  Style/StringLiterals
 900   Style/SpaceAroundOperators
-592   Style/SpaceInsideHashLiteralBraces
+594   Style/SpaceInsideHashLiteralBraces
 532   Style/Tab
-125   Style/SpaceInsideBlockBraces
 121   Metrics/LineLength
 117   Style/HashSyntax
 80    Style/IndentationWidth
 34    Style/SpaceBeforeBlockBraces
 28    Style/BracesAroundHashParameters
+24    Style/SpaceInsideBlockBraces
 17    Style/IndentationConsistency
 15    Style/ExtraSpacing
 13    Lint/UselessAssignment
@@ -90,9 +82,9 @@ curriculum/sql
 6     Style/EmptyLinesAroundAccessModifier
 5     Lint/UnusedMethodArgument
 5     Style/CommentIndentation
+5     Style/SpaceInsideParens
 4     Style/NestedParenthesizedCalls
 4     Style/SpaceAfterComma
-4     Style/SpaceInsideParens
 3     Lint/BlockAlignment
 3     Lint/IneffectiveAccessModifier
 3     Lint/UselessAccessModifier
@@ -108,86 +100,79 @@ curriculum/sql
 1     Style/StringLiteralsInInterpolation
 1     Style/UnneededInterpolation
 --
-3689  Total
+2579  Total
 ```
 
 #Rails
 ```
 curriculum/rails
 
-1418  Style/StringLiterals
-177   Style/HashSyntax
-115   Style/SpaceInsideHashLiteralBraces
-104   Metrics/LineLength
-48    Style/BracesAroundHashParameters
-42    Style/ExtraSpacing
-36    Lint/UselessAssignment
-25    Style/EmptyLinesAroundAccessModifier
-10    Style/MutableConstant
-10    Style/SpaceInsideBlockBraces
-6     Lint/UnusedBlockArgument
-5     Style/AlignHash
-5     Style/VariableNumber
-4     Lint/ShadowingOuterLocalVariable
-3     Style/CommentIndentation
-3     Style/ConditionalAssignment
-3     Style/Semicolon
-3     Style/SpaceAfterComma
-3     Style/SpaceAroundOperators
-3     Style/SpaceInsideStringInterpolation
-2     Lint/UnusedMethodArgument
-2     Style/AlignParameters
-2     Style/ClosingParenthesisIndentation
-2     Style/EmptyLineBetweenDefs
-2     Style/IdenticalConditionalBranches
-2     Style/IndentHash
-2     Style/IndentationConsistency
-2     Style/IndentationWidth
-2     Style/SpaceAfterColon
-1     Lint/BlockAlignment
-1     Lint/IneffectiveAccessModifier
-1     Lint/RescueException
-1     Lint/UselessAccessModifier
-1     Metrics/PerceivedComplexity
-1     Style/AccessModifierIndentation
-1     Style/InfiniteLoop
-1     Style/MethodCallParentheses
-1     Style/SpaceInsideParens
-1     Style/StringLiteralsInInterpolation
+177  Style/HashSyntax
+115  Style/SpaceInsideHashLiteralBraces
+104  Metrics/LineLength
+48   Style/BracesAroundHashParameters
+42   Style/ExtraSpacing
+36   Lint/UselessAssignment
+25   Style/EmptyLinesAroundAccessModifier
+10   Style/MutableConstant
+10   Style/SpaceInsideBlockBraces
+6    Lint/UnusedBlockArgument
+5    Style/AlignHash
+4    Lint/ShadowingOuterLocalVariable
+3    Style/CommentIndentation
+3    Style/Semicolon
+3    Style/SpaceAfterComma
+3    Style/SpaceAroundOperators
+3    Style/SpaceInsideStringInterpolation
+2    Lint/UnusedMethodArgument
+2    Style/AlignParameters
+2    Style/ClosingParenthesisIndentation
+2    Style/EmptyLineBetweenDefs
+2    Style/IdenticalConditionalBranches
+2    Style/IndentHash
+2    Style/IndentationConsistency
+2    Style/IndentationWidth
+2    Style/SpaceAfterColon
+1    Lint/BlockAlignment
+1    Lint/IneffectiveAccessModifier
+1    Lint/RescueException
+1    Lint/UselessAccessModifier
+1    Metrics/PerceivedComplexity
+1    Style/AccessModifierIndentation
+1    Style/InfiniteLoop
+1    Style/MethodCallParentheses
+1    Style/SpaceInsideParens
+1    Style/StringLiteralsInInterpolation
 --
-2051  Total
+625  Total
 ```
 
 #HMTL/CSS
 ```
 curriculum/html-css
 
-41  Style/StringLiterals
 15  Style/HashSyntax
 4   Style/ExtraSpacing
 2   Metrics/LineLength
 --
-62  Total
+21  Total
 ```
 
 #Javascript
 ```
 curriculum/javascript
 
-
-178  Style/StringLiterals
-29   Style/HashSyntax
-18   Metrics/LineLength
-10   Style/ExtraSpacing
-6    Style/EmptyLinesAroundAccessModifier
-4    Style/MutableConstant
-3    Style/SpaceAroundOperators
-2    Lint/UnusedMethodArgument
-2    Lint/UselessAssignment
-1    Style/AlignHash
-1    Style/ConditionalAssignment
+29  Style/HashSyntax
+18  Metrics/LineLength
+10  Style/ExtraSpacing
+6   Style/EmptyLinesAroundAccessModifier
+4   Style/MutableConstant
+3   Style/SpaceAroundOperators
+2   Lint/UnusedMethodArgument
+2   Lint/UselessAssignment
+1   Style/AlignHash
 --
-254  Total
+75  Total
 ```
 
 #React
@@ -195,7 +180,6 @@ curriculum/javascript
 curriculum/react
 
 1488  Style/SpaceAroundOperators
-680   Style/StringLiterals
 178   Style/SpaceInsideHashLiteralBraces
 82    Style/Tab
 28    Metrics/LineLength
@@ -220,5 +204,5 @@ curriculum/react
 1     Style/ParenthesesAroundCondition
 1     Style/SpaceInsideBlockBraces
 --
-2596  Total
+1916  Total
 ```

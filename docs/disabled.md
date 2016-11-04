@@ -18,6 +18,8 @@
 - Style/RedundantSelf
 - Style/RescueModifier
 - Style/SpaceInsideBrackets
+- Style/StringLiterals
+- Style/Tabs
 - Style/TrailingBlankLines
 - Style/TrailingCommaInArguments
 - Style/TrailingCommaInLiteral

@@ -1,5 +1,7 @@
 #App Academy Ruby Linter
 
+Click [here](/docs) for production README.
+
 ##How to install
 
 ###Step 1

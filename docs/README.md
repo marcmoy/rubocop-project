@@ -1,4 +1,4 @@
-### Objective
+# Objective
 Develop a Ruby linter to help guide students and teachers to write Ruby code with best coding practices in mind.
 
 # Study
@@ -267,21 +267,20 @@ Next, the current code base was tested using the `.rubocop.yml` file from the [T
 [Adjustments](/rubocop_adjustments.md) were made to the Rubocop settings and tested again to existing curriculum code base. Here are the results:
 
 ```
-3653  Style/StringLiterals
 2407  Style/SpaceAroundOperators
-915   Style/SpaceInsideHashLiteralBraces
+917   Style/SpaceInsideHashLiteralBraces
 614   Style/Tab
 428   Style/HashSyntax
 317   Metrics/LineLength
-154   Style/SpaceInsideBlockBraces
 112   Style/IndentationWidth
 104   Style/BracesAroundHashParameters
 81    Style/ExtraSpacing
 79    Lint/UselessAssignment
 67    Style/EmptyLinesAroundAccessModifier
+53    Style/SpaceInsideBlockBraces
 47    Style/SpaceBeforeBlockBraces
+33    Style/SpaceInsideParens
 33    Style/SymbolProc
-32    Style/SpaceInsideParens
 30    Style/MutableConstant
 29    Style/IndentationConsistency
 27    Style/SpaceAfterComma
@@ -297,24 +296,19 @@ Next, the current code base was tested using the `.rubocop.yml` file from the [T
 9     Style/ClosingParenthesisIndentation
 8     Style/MultilineMethodCallIndentation
 7     Lint/IneffectiveAccessModifier
-7     Style/VariableNumber
 6     Lint/UselessAccessModifier
 6     Style/AlignHash
 6     Style/Semicolon
 6     Style/StringLiteralsInInterpolation
 5     Lint/BlockAlignment
-5     Performance/RedundantBlockCall
-5     Style/ConditionalAssignment
 5     Style/IdenticalConditionalBranches
 5     Style/RedundantParentheses
 5     Style/SpaceAfterColon
 4     Performance/RangeInclude
 4     Style/IndentHash
 4     Style/MethodCallParentheses
-4     Style/MultilineOperationIndentation
 4     Style/NestedParenthesizedCalls
 4     Style/ParenthesesAroundCondition
-4     Style/RescueModifier
 3     Lint/RescueException
 3     Lint/UnifiedInteger
 3     Metrics/PerceivedComplexity
@@ -322,7 +316,6 @@ Next, the current code base was tested using the `.rubocop.yml` file from the [T
 3     Style/InfiniteLoop
 3     Style/MethodDefParentheses
 3     Style/SpaceInsideStringInterpolation
-3     Style/TrailingUnderscoreVariable
 3     Style/UnneededInterpolation
 2     Lint/UselessComparison
 2     Style/EmptyLineBetweenDefs
@@ -346,11 +339,11 @@ Next, the current code base was tested using the `.rubocop.yml` file from the [T
 1     Style/RedundantBegin
 1     Style/UnlessElse
 --
-9414  Total
+5635  Total
 ```
 
 ### App Academy Rubocop with Autocorrect
-After using the Autocorrect tool, the existing code base was tested again. Here are the results:
+Rubocop comes with a command line tool to autocorrect multiple files (furthur explained [here](autocorrect.md). This tool was ran against the existing code base with the a/A rubocop settings to observe the capabilities of that script. Here are the results:
 
 ```
 373  Metrics/LineLength
@@ -378,13 +371,14 @@ After using the Autocorrect tool, the existing code base was tested again. Here 
 ```
 
 ## Summary
+A breakdown for each of the curriculum directories were saved in the [offenses folder](offenses). Below is a table representing the offenses in each curriculum directory at each stage of the rubocop settings listed above.
 
 | Directory Name | Default Settings | Thoughbot Settings | a/A Settings (pre-autocorrect) | a/A Settings (post-autocorrect) |
 |:--------------:|:----------------:|:------------------:|--------------------------------|---------------------------------|
-|      Ruby      |       2150       |        1199        |               762              |               150               |
-|       SQL      |       26980      |        8291        |              3689              |               266               |
-|      Rails     |       3435       |        2921        |              2051              |               184               |
-|    HTML/CSS    |        124       |         95         |               62               |                2                |
-|   Javascript   |        558       |         429        |               254              |                23               |
-|      React     |       6130       |        3542        |              2596              |                71               |
-| Total Offenses |       39377      |        16477       |              9414              |               696               |
+|      Ruby      |       2150       |        1199        |               419              |                80               |
+|       SQL      |       26980      |        8291        |              2579              |               235               |
+|      Rails     |       3435       |        2921        |               625              |               150               |
+|    HTML/CSS    |        124       |         95         |               21               |                2                |
+|   Javascript   |        558       |         429        |               75               |                22               |
+|      React     |       6130       |        3542        |              1916              |                55               |
+| Total Offenses |       39377      |        16477       |              5635              |               544               |
